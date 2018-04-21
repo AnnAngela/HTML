@@ -19,27 +19,79 @@
     </head>
 
     <body>
- 
+
         <h1>
-            我是一级标题
+            <a href="http://www.sunxxxxx.com/images/003.jpg">
+                我是一级标题
+            </a>
         </h1>
-        <h2>
-            我是二级标题
-        </h2>
-        <h3>
-            我是三级标题
-        </h3>
-        <p>
-            我的第一个段落。
-        </p>
- 
+
+        
+
         <customView>
             自定义的view
         </customView>
 
-        <a>
-            我是a
-        </a>
- 
+
+
+        <!-- form表单 -->
+        <form>
+            <!-- 如果type是password.那么用户输入的字符会变成点 -->
+            <input placeholder="我是占位符">
+            <br><br>
+            <input type="password" placeholder="我是占位符111">
+            <br><br>
+
+            <textarea name="textArear" id="1" cols="30" rows="10">
+                en?
+            </textarea>
+        </form>
+
+
+        
+        <button>登录</button>
+        <br>
+        <input type="checkbox" name="ss" id="">
+        <br>
+        <input type="range" name="sqq" id="" min="-1000" value="0">
+        <br>
+        <input type="number" name="" id="">
+
+
+        <!-- 如果三个input的name一样.就会只能选中一个. -->
+        <!-- checked表示默认选中 -->
+        <br><br>今天星期几?<br>
+        <input type="radio" name="q1" id="" checked>星期一
+        <input type="radio" name="q1" id="">星期二
+        <input type="radio" name="q1" id="">星期三
+
+        <br>
+        <br><br>
+        今天星期几?
+        <br>
+        <select name="" id="">
+            <option value="">星期一</option>
+            <option value="">星期二</option>
+            <option value="">星期三</option>
+        </select>
+
+
+
+        <!-- 使用datalist可以让用户选中.并且也支持用户自己输入 -->
+        <br><br>今天星期几?<br>
+        <input type="text" list="datalist1">
+        
+        <datalist id="datalist1">
+            <option>星期一</option>
+            <option>星期二</option>
+            <option>星期三</option>
+        </datalist>
+
+
+        <br>
+        <input type="date" name="" id="">
+        <br>
+        <input type="datetime-local" name="" id="">
+
     </body>
 </html>
